@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         val categoryAdapter = CategoryAdapter()
 
-        viewModel.getMeals()
+        viewModel.toString()
 
         lifecycleScope.launch {
             viewModel.meals.collect {result->
