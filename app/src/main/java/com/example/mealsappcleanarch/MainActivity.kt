@@ -19,13 +19,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
-
         val categoryAdapter = CategoryAdapter()
 
-        viewModel.getMeals()
+//        viewModel.getMeals()
 
         lifecycleScope.launch {
             viewModel.meals.collect {result->
