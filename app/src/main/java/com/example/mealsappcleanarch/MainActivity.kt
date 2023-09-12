@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.toString()
 
 
+
+
+
         lifecycleScope.launch {
             viewModel.meals.collect {result->
                 result?.let {
