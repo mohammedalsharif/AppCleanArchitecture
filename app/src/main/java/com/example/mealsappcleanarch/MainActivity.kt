@@ -18,18 +18,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val name ="Mohammed"
-        val lastName ="alSharif"
-
-
         val categoryAdapter = CategoryAdapter()
-
-        viewModel.toString()
-
-
-
-
+        viewModel.getMeals()
 
         lifecycleScope.launch {
             viewModel.meals.collect {result->
